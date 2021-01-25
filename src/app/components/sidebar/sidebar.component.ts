@@ -15,53 +15,35 @@ export const ROUTES: RouteInfo[] = [
     icon: "icon-chart-pie-36",
     class: ""
   },
-  {
-    path: "/icons",
-    title: "Icons",
-    rtlTitle: "الرموز",
-    icon: "icon-atom",
-    class: ""
-  },
-  {
-    path: "/maps",
-    title: "Maps",
-    rtlTitle: "خرائط",
-    icon: "icon-pin",
-    class: "" },
-  {
-    path: "/notifications",
-    title: "Notifications",
-    rtlTitle: "إخطارات",
-    icon: "icon-bell-55",
-    class: ""
-  },
 
   {
-    path: "/user",
-    title: "User Profile",
-    rtlTitle: "ملف تعريفي للمستخدم",
+    path: "/users",
+    title: "Users",
+    rtlTitle: "التعديلات",
     icon: "icon-single-02",
     class: ""
   },
+  
   {
-    path: "/tables",
-    title: "Table List",
-    rtlTitle: "قائمة الجدول",
-    icon: "icon-puzzle-10",
+    path: "/recruiters",
+    title: "Recruiters",
+    rtlTitle: "التعديلات",
+    icon: "icon-coins",
+    class: ""
+  },
+  
+  {
+    path: "/freelancers",
+    title: "Freelancers",
+    rtlTitle: "التعديلات",
+    icon: "icon-laptop",
     class: ""
   },
   {
-    path: "/typography",
-    title: "Typography",
-    rtlTitle: "طباعة",
-    icon: "icon-align-center",
-    class: ""
-  },
-  {
-    path: "/rtl",
-    title: "RTL Support",
-    rtlTitle: "ار تي ال",
-    icon: "icon-world",
+    path: "/parameters",
+    title: "Parameters",
+    rtlTitle: "التعديلات",
+    icon: "icon-settings",
     class: ""
   }
 ];

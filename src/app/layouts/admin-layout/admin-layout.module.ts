@@ -15,6 +15,9 @@ import { TypographyComponent } from "../../pages/typography/typography.component
 // import { RtlComponent } from "../../pages/rtl/rtl.component";
 
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+import { RecruitersComponent } from "src/app/pages/recruiters/recruiters.component";
+import { FreelancersComponent } from "src/app/pages/freelancers/freelancers.component";
+import { ParametersComponent } from "src/app/pages/parameters/parameters.component";
 
 @NgModule({
   imports: [
@@ -32,6 +35,10 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
     TypographyComponent,
     NotificationsComponent,
     MapComponent,
+    RecruitersComponent,
+    FreelancersComponent,
+    UserComponent,
+    ParametersComponent,
     // RtlComponent
   ]
 })
