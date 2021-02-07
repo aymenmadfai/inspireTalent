@@ -1,0 +1,50 @@
+<div class="container" style="height: 100vh;">
+    
+<div class="row h-100 align-items-center">
+    <div class=" col-12 offset-md-3 col-md-6">
+        <div class=" card">
+          <div class=" card-header"><h5 class=" title text-center">Welcome</h5></div>
+          <div class=" card-body">
+            <form [formGroup]="loginForm">
+              <div class=" row">
+                <div class=" col-md-12">
+                  <div class=" form-group">
+                    <label for="exampleInputEmail1"> Email address </label>
+                    <input
+                      class=" form-control"
+                      placeholder="mike@email.com"
+                      type="email"
+                      formControlName="email"
+                    />
+                    <div *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)">
+                      <div class="text-danger" *ngIf="loginForm.controls['email'].errors.required">Email is required</div>
+                      <div class="text-danger" *ngIf="loginForm.controls['email'].errors.email">Enter a valid email adress</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class=" col-12">
+                    <div class=" form-group">
+                      <label for="exampleInputEmail1"> Password </label>
+                      <input
+                        class=" form-control"
+                        type="password"
+                        formControlName="pwd"
+                      />
+                      <div *ngIf="loginForm.controls['pwd'].invalid && (loginForm.controls['pwd'].dirty || loginForm.controls['pwd'].touched)">
+                        <div class="text-danger" *ngIf="loginForm.controls['pwd'].errors.required">Password is required</div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </form>
+          </div>
+          <div class=" card-footer">
+            <button class=" btn btn-fill btn-danger" type="submit" (click)="login()">Login</button>
+          </div>
+        </div>
+      </div>
+</div>
+  
+    </div>

@@ -11,6 +11,7 @@ import { RecruitersComponent } from "../../pages/recruiters/recruiters.component
 import { FreelancersComponent } from "src/app/pages/freelancers/freelancers.component";
 import { UsersComponent } from "src/app/pages/users/users.component";
 import { ParametersComponent } from "src/app/pages/parameters/parameters.component";
+import { LoginComponent } from "src/app/components/login/login.component";
 // import { RtlComponent } from "../../pages/rtl/rtl.component";
 
 export const AdminLayoutRoutes: Routes = [
@@ -25,5 +26,6 @@ export const AdminLayoutRoutes: Routes = [
   { path: "freelancers", component: FreelancersComponent },
   { path: "users", component: UsersComponent },
   { path: "parameters", component: ParametersComponent },
+  { path: "login", component: LoginComponent },
   // { path: "rtl", component: RtlComponent }
 ];
